@@ -944,7 +944,6 @@
     "@vitest/coverage-v8": "catalog:",
     "api-types": "workspace:*",
     "config": "workspace:*",
-    "next-router-mock": "^0.9.13",
     "tailwindcss": "^4.2.4",
     "tsx": "catalog:",
     "typescript": "catalog:",
@@ -952,8 +951,5 @@
     "vfile": "^6.0.3",
     "vite": "catalog:",
     "vitest": "catalog:"
-  },
-  "peerDependencies": {
-    "next": "catalog:"
   }
 }

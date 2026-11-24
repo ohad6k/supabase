@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { useState } from 'react'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it } from 'vitest'
 
 import { PageType } from '../internal/state/pagesState'
 import { CommandWrapper } from './CommandMenu'
@@ -9,10 +9,6 @@ import { CommandMenuInput } from './CommandMenuInput'
 import { CommandProvider } from './CommandProvider'
 import { useCurrentPage, useRegisterPage, useSetPage } from './hooks/pagesHooks'
 import { useQuery } from './hooks/queryHooks'
-
-vi.mock('next/compat/router', () => ({
-  useRouter: () => null,
-}))
 
 const SUBPAGE = 'Search things'
 
